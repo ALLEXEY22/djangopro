@@ -8,6 +8,8 @@ def index_page(request):
 worcker_to_cange = Worcker.objects.get(id=5)    доступ к объекту БД по id запись в переменную
     print(worcker_to_cange)                     печать переменной в теминале
     """
+    all_worckers = Worcker.objects.all()
+    print(all_worckers)
 
     """
     worcker_to_cange.second_name = 'Задира'     изменения 
